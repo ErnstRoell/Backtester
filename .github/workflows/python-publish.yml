@@ -27,7 +27,7 @@ jobs:
         python-version: '3.x'
     - name: Install wheel
       run: | 
-        pip3 isnta
+        pip3 install wheel
     - name: Build wheel 
       run: |
         python -m pip install --upgrade pip
