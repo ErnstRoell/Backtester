@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
  
 setuptools.setup(
     name="utils",
-    version="0.0.1",
+    version="0.0.2",
     author="Ernst Roell",
     author_email="bla",
     description="Package to create hello",
