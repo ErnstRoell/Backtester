@@ -9,7 +9,7 @@ CHUNK_SIZE=1
 q = Queue(maxsize=0)
 
 
-from event import Event, MessageEvent
+from utils.events.events import Event, MessageEvent
 
 class Server2Client(Thread):
     """
@@ -123,4 +123,3 @@ class Client(Thread):
 if __name__ == "__main__":
     server=Server()
     server.start()
-
