@@ -29,9 +29,10 @@ jobs:
       run: | 
         pip3 install wheel
     - name: Build wheel 
+      working-directory: utils
       run: |
         python -m pip install --upgrade pip
-        python utils/setup.py bdist_wheel
+        python setup.py bdist_wheel
       
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.3.0
